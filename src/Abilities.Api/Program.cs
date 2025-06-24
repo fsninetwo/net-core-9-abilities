@@ -14,6 +14,7 @@ builder.Services.AddSwaggerGen(options =>
 });
 builder.Services.AddControllers();
 builder.Services.AddRazorComponents();
+builder.Services.AddAntiforgery();
 
 var app = builder.Build();
 
@@ -32,6 +33,9 @@ app.MapControllers().WithStaticAssets();
 
 // Optimize static assets
 app.MapStaticAssets();
+
+// Antiforgery middleware (must be between routing and endpoints)
+app.UseAntiforgery();
 
 app.Run();
 
