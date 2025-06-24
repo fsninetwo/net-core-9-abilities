@@ -1,0 +1,64 @@
+# .gitignore for C# / .NET projects
+# Based on the official GitHub template + extras for .NET 9 preview
+
+# Build results
+bin/
+obj/
+
+# Publish / packaging
+publish/
+out/
+*.msix
+*.nupkg
+
+# User-specific & IDE files
+.vs/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+
+# Rider / VS Code
+.idea/
+*.code-workspace
+.vscode/*
+!.vscode/tasks.json
+!.vscode/launch.json
+
+# Logs & analysis
+*.log
+*.tlog
+TestResults/
+
+# Dependency caches
+packages/
+.nuget/
+
+# Resharper / analyser
+_ReSharper*/
+*.[Rr]e[Ss]harper
+StyleCopReport.xml
+
+# DotCover
+*.dcvr
+
+# NCrunch
+*.ncrunch*
+
+# auto-generated files
+*.dbmdl
+*.bak
+
+# secrets
+appsettings.*.local.json
+secrets.json
+
+# OS
+*.DS_Store
+Thumbs.db
+
+# other
+*.vspscc
+*.vssscc 
