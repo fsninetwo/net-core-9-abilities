@@ -13,6 +13,7 @@ builder.Services.AddSwaggerGen(options =>
     options.SwaggerDoc(swaggerVersion, new OpenApiInfo { Title = swaggerTitle, Version = swaggerVersion });
 });
 builder.Services.AddControllers();
+builder.Services.AddRazorComponents();
 
 var app = builder.Build();
 
@@ -26,6 +27,7 @@ if (app.Environment.IsDevelopment())
 }
 
 // Map controller endpoints
+app.MapRazorComponents<Abilities.Ui.App>();
 app.MapControllers().WithStaticAssets();
 
 // Optimize static assets
