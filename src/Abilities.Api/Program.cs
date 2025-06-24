@@ -26,7 +26,10 @@ if (app.Environment.IsDevelopment())
 }
 
 // Map controller endpoints
-app.MapControllers();
+app.MapControllers().WithStaticAssets();
+
+// Optimize static assets
+app.MapStaticAssets();
 
 app.Run();
 
