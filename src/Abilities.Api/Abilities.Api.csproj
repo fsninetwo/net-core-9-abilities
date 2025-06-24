@@ -7,4 +7,7 @@
   <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.1" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../Abilities.Ui/Abilities.Ui.csproj" />
+  </ItemGroup>
 </Project> 
